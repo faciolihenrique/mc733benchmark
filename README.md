@@ -1,20 +1,18 @@
-# mc733benchmark - Grupo 2
+# Grupo 2
 
-- Henrique Noronha Facioli RA: 157986
+- Nome: Henrique Noronha Facioli RA: 157986
 
-- Matheus Diamantino RA: 156740
+- Nome: Matheus Diamantino RA: 156740
 
-- Thiago Silva de Farias RA: 148077
+- Nome: Thiago Silva de Farias RA: 148077
 
-----------------
-
-# Programa 2 - INSERIR NOME DO PROGRAMA
+# Programa 2 - x264
 
 ## O que faz? Para que serve?
-Inclua aqui uma breve descrição do seu programa para explicar o que esperar dele.
+O x264 é um software de código aberto para codificação de fluxos de vídeo para o formato H.264/MPEG-4 AVC.
 
 ## Por que é bom para medir desempenho?
-Que tipo de atividade ele está medindo? Somente desempenho do processador? Desempenho do disco? Algo mais? Processador single-core, multi-core?
+Ao utilizarmos o x264 como benchmark, estamos medindo o quão rapidamente é possível codificar um vídeo de algum formato para o formato x264. Com isso, podemos utilizar diferentes flags para medir o desempenho da CPU, tanto quanto da GPU. Além disso, como estaremos utilizando arquivos relativamente pesados, poderemos medir as velocidades de escrita e leitura dos computadores a serem testados.
 
 ## O que baixar
 Onde pode ser baixado o código fonte dele. Não é permitido utilizar nenhuma versão já instalada nos computadores.
