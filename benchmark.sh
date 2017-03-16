@@ -13,17 +13,7 @@ if ! [ -f ./x264-bin ]; then
     (cd ./x264 && make clean)
 fi
 
-# Download youtube-downloader
-if ! [ -f youtube-downloader ]; then
-    echo Downloading youtube downloader
-    curl -L https://yt-dl.org/downloads/latest/youtube-dl -o  youtube-downloader
-    chmod a+rx youtube-downloader
+if ! [ -f sintel_trailer_2k_480p24.y4m ]; then
+    echo Downloading Sintel Trailer in raw format
+    wget https://media.xiph.org/video/derf/y4m/sintel_trailer_2k_480p24.y4m
 fi
-
-# Download video from youtube
-if ! [ -f video.mp4 ]; then
-    echo Downloading Big Bucks Bunny
-    ./youtube-downloader https://www.youtube.com/watch\?v\=YE7VzlLtp-4 --youtube-skip-dash-manifest -f 136 -o video.mp4
-fi
-
-
