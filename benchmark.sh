@@ -17,3 +17,6 @@ if ! [ -f sintel_trailer_2k_480p24.y4m ]; then
     echo Downloading Sintel Trailer in raw format
     wget https://media.xiph.org/video/derf/y4m/sintel_trailer_2k_480p24.y4m
 fi
+
+# Now we're doing the stats
+perf stats -d -r 5 ./x264-bin -o video.mkv sintel_trailer_2k_480p24.y4m
