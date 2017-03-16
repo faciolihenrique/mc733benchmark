@@ -44,7 +44,9 @@ O desempenho é medido utilizando as flags `-d` e `-r "N"` do `perf`, que servem
 O desempenho será apresentado na forma de várias medições realizadas pelo `perf`, onde são mostradas tanto as médias dessas medições quanto os seus desvios-padrão. Para a nossa análise, o foco será nas medições correspondentes à: tempo de execução (`seconds time elapsed`), número de `page-faults` e cache-load-misses (`L1-dcache-load-misses`).
 
 ## Medições base (uma máquina)
+As medições da máquina são feitas automáticamente com o script e são colocadas no arquivos specs.txt no formato abaixo:
 
+```
 IH/W path     Device      Class          Description
 ===================================================
                          system         Computer
@@ -67,3 +69,4 @@ IH/W path     Device      Class          Description
 /0/2/0.0.0   /dev/cdrom  disk           DVD+-RW GTA0N
 /1           virbr0-nic  network        Ethernet interface
 /2           virbr0      network        Ethernet interface.
+```
